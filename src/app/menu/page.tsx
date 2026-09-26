@@ -1,18 +1,3 @@
-import legacyPages from "@/legacy/pages.json";
-import {
-  createPageMetadata,
-  LegacyPage,
-  type LegacyPageData,
-} from "@/components/legacy/legacy-page";
-
-const page = legacyPages.menu as LegacyPageData;
-
-export const metadata = createPageMetadata(
-  page,
-  "PROBOW Menu Rajkot | Healthy Vegetarian Food",
-  "Explore fresh vegetarian rice bowls, salads, artisan pastas, Maggie and smoothies from PROBOW in Rajkot.",
-);
-
-export default function MenuPage() {
-  return <LegacyPage name="menu" page={page} />;
-}
+﻿import type { Metadata } from "next";
+export const metadata: Metadata = { title: "Menu", description: "PROBOW menu in Rajkot." };
+export default function MenuPage() { return <section className="route-placeholder"><h1>Menu</h1><p>The menu page migration is next.</p><a href="/#menu">Browse the home menu</a></section>; }

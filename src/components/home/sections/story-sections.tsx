@@ -1,0 +1,14 @@
+import Link from "next/link";
+import { homeFaq } from "@/components/home/content";
+import { ContentImage, FeatureCard, SectionHeading } from "@/components/home/section-primitives";
+export function StorySections() {
+  return <>
+    <section className="home-section story-section" id="story"><div className="page-container story-section__grid"><div><SectionHeading eyebrow="Our story" title="How PROBOW started"/><p>Born from a couple's love for food, Probow started with a simple dream &mdash; to make healthy eating exciting.</p><p>We wanted to bring something different to the table: international-inspired healthy dishes with flavours that feel familiar to India.</p><p>At Probow, we believe eating healthy shouldn't mean eating boring. That's why we experiment with global flavours, fresh ingredients and our own Indian touch to create meals that are wholesome, flavourful and genuinely enjoyable.</p><p>From refreshing salads to hearty rice bowls, every dish is prepared with the thought of making healthy food something you actually look forward to eating.</p><p>We're still growing, experimenting and discovering new flavours &mdash; but our goal remains simple: to make healthy food delicious enough that you never feel like you're compromising.</p></div><ContentImage className="story-section__image" src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="A cook preparing fresh food"/></div></section>
+    <section className="home-section origin-section" id="probow-origin"><div className="page-container origin-section__grid"><ContentImage src="https://assets.probow.in/probo/images/probo-og.png" alt="PROBOW healthy vegetarian food in Rajkot"/><div><SectionHeading eyebrow="Food with a story" title="Healthy food should feel like a food adventure."/><p>PROBOW comes from a simple belief: eating healthy does not have to mean eating the same food every day.</p><p>Before starting PROBOW, our founder spent two years running a caf&eacute; in Bengaluru. That experience gave us a close look at what people actually enjoy eating and inspired us to bring interesting, fresh dishes to Rajkot.</p><p>Our goal is simple: make healthy food feel exciting, familiar and satisfying.</p></div></div></section>
+  </>;
+}
+
+
+export function HomeFaq() {
+  return <section className="home-section faq-section" id="faq"><div className="page-container faq-section__grid"><div><SectionHeading eyebrow="Good to know" title="Frequently asked questions"/><p>Everything you need to know about ordering fresh food from PROBOW in Rajkot.</p><Link className="text-link" href="/contact_us">Have another question? Contact us <span aria-hidden="true">&#8594;</span></Link></div><div className="faq-list">{homeFaq.map(([question,answer]) => <details className="faq-item" key={question}><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div></div></section>;
+}
