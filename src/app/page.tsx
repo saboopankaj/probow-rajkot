@@ -1,18 +1,32 @@
-import legacyPages from "@/legacy/pages.json";
-import {
-  createPageMetadata,
-  LegacyPage,
-  type LegacyPageData,
-} from "@/components/legacy/legacy-page";
+﻿import type { Metadata } from "next";
+import { HomeHero } from "@/components/home/home-hero";
+import { HomeSections } from "@/components/home/home-sections";
+import { HomeMenu } from "@/components/home/home-menu";
+import { OfferPopup } from "@/components/home/offer-popup";
 
-const page = legacyPages.home as LegacyPageData;
-
-export const metadata = createPageMetadata(
-  page,
-  "PROBOW | Healthy Vegetarian Food & Delivery in Rajkot",
-  "Fresh vegetarian rice bowls, salads, pesto pasta and smoothies made to order in Rajkot. Healthy food that is never boring.",
-);
+export const metadata: Metadata = {
+  title: "PROBOW | Healthy Vegetarian Food & Delivery in Rajkot",
+  description: "Fresh vegetarian rice bowls, salads, pesto pasta and smoothies made to order in Rajkot. Healthy food that is never boring.",
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+  openGraph: {
+    type: "website",
+    siteName: "PROBOW",
+    url: "/",
+    title: "PROBOW | Healthy Vegetarian Food & Delivery in Rajkot",
+    description: "Fresh vegetarian rice bowls, salads, pesto pasta and smoothies made to order in Rajkot.",
+    images: ["https://assets.probow.in/probo/images/probo-og.png"],
+  },
+  twitter: { card: "summary_large_image", images: ["https://assets.probow.in/probo/images/probo-og.png"] },
+};
 
 export default function HomePage() {
-  return <LegacyPage name="home" page={page} />;
+  return (
+    <>
+      <HomeHero />
+      <HomeMenu />
+      <HomeSections />
+      <OfferPopup />
+    </>
+  );
 }

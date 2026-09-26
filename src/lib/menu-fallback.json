@@ -1,0 +1,677 @@
+{
+  "categories": [
+    {
+      "id": "all",
+      "name": "All items",
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "salads",
+      "name": "Salads",
+      "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "rice-bowls",
+      "name": "Rice Bowls",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141e2eefd?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "maggie-mania",
+      "name": "Maggie Mania",
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=400&q=80"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "High Protein Avocado Crunch Bowl",
+      "category": "salads",
+      "description": "A colourful bowl of fresh vegetables, creamy avocado, protein-rich tofu and our signature herb dressing. Fresh, filling and packed with flavour.",
+      "price": 299,
+      "images": [
+        "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=85",
+        "https://images.unsplash.com/photo-1512621776951-a57141e2eefd?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": {
+        "text": "Bestseller"
+      },
+      "tags": [
+        {
+          "type": "vegan",
+          "text": "Vegan",
+          "icon": "fa-leaf"
+        },
+        {
+          "type": "spicy",
+          "text": "Spicy",
+          "icon": "fa-pepper-hot"
+        },
+        {
+          "type": "high-protein",
+          "text": "High Protein",
+          "icon": "fa-dumbbell"
+        }
+      ],
+      "featured": {
+        "todayPick": true
+      },
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "price": 0
+        },
+        {
+          "id": "mega",
+          "name": "Mega Bowl (+50% veg & grain)",
+          "price": 60
+        }
+      ],
+      "relatedProducts": [
+        5,
+        18,
+        29
+      ],
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Green Silk Pasta Salad",
+      "category": "salads",
+      "description": "Served with avocado creamy sauce and serving with green fresh veggies with herb pasta.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Crimson Pasta Garden Bowl",
+      "category": "salads",
+      "description": "Serving with fresh veggies along with fresh pasta and eggless tomato mayo sauce.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1621996346565-e3d5d6281270?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "Thai Peanuts Buddha Bowl",
+      "category": "salads",
+      "description": "Fresh veggies along with fresh quinoa and Thai peanut sauce.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 5,
+      "name": "Basil Pesto Pasta Salad",
+      "category": "salads",
+      "description": "Fresh penne pasta coated in our signature creamy basil pesto, paired with perfectly stir-fried exotic vegetables for a vibrant, herbaceous bowl that's light, creamy, and packed with flavor.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1621996346565-e3d5d6281270?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 6,
+      "name": "Veggie Spark Bowl",
+      "category": "salads",
+      "description": "Fresh mix veggies stir fry with a lemon honey dressing.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 7,
+      "name": "Corn Carnival Bowl",
+      "category": "salads",
+      "description": "Serving sweet corns with fresh veggies stir fry in butter along with fresh curd sauce. Subject to Availability.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 8,
+      "name": "Protein Pop Bowl",
+      "category": "salads",
+      "description": "Kidney beans with sweet corn, fresh veggies and coriander sauce.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 9,
+      "name": "Cheesy Veg Burst Salad Bowl",
+      "category": "salads",
+      "description": "Fresh exotic veggies & paneer cubes layered with creamy melted cheese and a smooth, tangy red sauce.",
+      "price": 389,
+      "images": [
+        "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 10,
+      "name": "Noodle Salad Bowl",
+      "category": "salads",
+      "description": "Wholesome Aata Maggi noodles tossed in a creamy sauce, paired with a colourful mix of fresh stir-fried veggies for the perfect balance of comfort and crunch.",
+      "price": 389,
+      "images": [
+        "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 11,
+      "name": "Lebanese Tabbouleh Bowl",
+      "category": "salads",
+      "description": "A wholesome bowl of stir-fried exotic vegetables and nutty wheat bulgur (Daliya), tossed with a refreshing Indian parsley & mint pest for a light, flavorful, and nourishing meal.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 12,
+      "name": "WakTak Salad Bowl",
+      "category": "salads",
+      "description": "Rice noodles and exotic mix veggies tossed in our signature dressing for a fresh, crunchy, and delicious Asian salad.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1512621776951-a57141e2eefd?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 13,
+      "name": "Brocco Crunch Salad",
+      "category": "salads",
+      "description": "Fresh Broccoli and crunchy mix veggies tossed in a rich, creamy cheesy dressing for the perfect balance of freshness and flavor. A wholesome, crunchy, and satisfying salad bowl made for healthy cravings.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 14,
+      "name": "K-Crunch Salad Bowl",
+      "category": "salads",
+      "description": "Crunchy cucumber & onion with mixed veggies, tossed in Indian spices and coated in our signature creamy dressing. Korean-inspired salad bowl.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 15,
+      "name": "Fiesta Pizza Rice Bowl",
+      "category": "rice-bowls",
+      "description": "Serving with mexican rice, pico de gallo, nachos mexican herbs and melting cheese.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 16,
+      "name": "Green Velvet Paneer Bowl",
+      "category": "rice-bowls",
+      "description": "Fluffy rice, fresh paneer, seasonal veggies, home made avocado green sauce, and aromatic herbs.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 17,
+      "name": "Pomodoro Veg Rice Bowl",
+      "category": "rice-bowls",
+      "description": "Freshly cooked rice blended with ripe tomatoes, garden vegetables, natural herbs, light spices cooked in a wholesome red sauce.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 18,
+      "name": "Mediterranean Hummus Bowl",
+      "category": "rice-bowls",
+      "description": "Farm fresh veggies with classic hummus, tofu serving with herb rice.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 19,
+      "name": "One Pot Rice Bowl",
+      "category": "rice-bowls",
+      "description": "Herb Rice cello fry in garlic sauce and farm fresh veggies.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 20,
+      "name": "Soya Power Bowl",
+      "category": "rice-bowls",
+      "description": "Wok-tossed rice with wholesome mixed veggies, protein-rich soya chunks, and aromatic Indian spices.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 21,
+      "name": "Broccoli Lemon Rice",
+      "category": "rice-bowls",
+      "description": "Fragrant herb infused rice tossed with stir fried broccoli in butter, fresh lemon juice, aromatic mixed herbs and signature Indian spices for a light yet flavorful bowl.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 22,
+      "name": "Cheese Chilli Rice Bowl (Ema Datshi)",
+      "category": "rice-bowls",
+      "description": "A comforting Bhutanese classic featuring fluffy steamed rice paired with a rich, cheesy and creamy gravy infused with fresh green chillies. Warm, mildly spicy and deeply satisfying.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 23,
+      "name": "Signature Tomato Cheese Bowl",
+      "category": "rice-bowls",
+      "description": "Herb rice tossed with exotic mixed vegetables in a creamy tomato cheese gravy.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 24,
+      "name": "Classic Masala",
+      "category": "maggie-mania",
+      "description": "",
+      "price": 110,
+      "images": [
+        "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 25,
+      "name": "Veg Masala",
+      "category": "maggie-mania",
+      "description": "",
+      "price": 149,
+      "images": [
+        "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 26,
+      "name": "Veg Butter Masala",
+      "category": "maggie-mania",
+      "description": "",
+      "price": 179,
+      "images": [
+        "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 27,
+      "name": "Veg Tadka",
+      "category": "maggie-mania",
+      "description": "",
+      "price": 199,
+      "images": [
+        "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 28,
+      "name": "Thukpa Noodle Soup",
+      "category": "maggie-mania",
+      "description": "",
+      "price": 149,
+      "images": [
+        "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 29,
+      "name": "Fresh Buttermilk",
+      "category": "drinks",
+      "description": "",
+      "price": 20,
+      "images": [
+        "https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 30,
+      "name": "Coffee Lemonade",
+      "category": "drinks",
+      "description": "",
+      "price": 129,
+      "images": [
+        "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 31,
+      "name": "Classic Cold Coffee",
+      "category": "drinks",
+      "description": "",
+      "price": 149,
+      "images": [
+        "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 32,
+      "name": "Cucu Nana Smoothie",
+      "category": "drinks",
+      "description": "",
+      "price": 149,
+      "images": [
+        "https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 33,
+      "name": "Coffee Banana Smoothie",
+      "category": "drinks",
+      "description": "",
+      "price": 169,
+      "images": [
+        "https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    },
+    {
+      "id": 34,
+      "name": "BanaBerry Bliss Smoothie",
+      "category": "drinks",
+      "description": "",
+      "price": 169,
+      "images": [
+        "https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=700&q=85"
+      ],
+      "badge": null,
+      "tags": [],
+      "featured": {
+        "todayPick": false
+      },
+      "variants": [],
+      "relatedProducts": [],
+      "available": true
+    }
+  ]
+}

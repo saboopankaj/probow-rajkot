@@ -1,0 +1,38 @@
+.product-modal { position: relative; width: min(850px,100%); max-height: min(92vh,900px); overflow-y: auto; border-radius: 22px; background: var(--card); box-shadow: 0 25px 85px rgba(0,0,0,.3); }
+.product-modal__close { position: absolute; z-index: 1; top: 12px; right: 12px; display: grid; width: 42px; height: 42px; place-items: center; border: 0; border-radius: 50%; background: rgba(255,253,247,.94); font-size: 19px; cursor: pointer; }
+.product-modal__main { display: grid; grid-template-columns: .9fr 1.1fr; }
+.product-modal__media { min-height: 370px; background: var(--paper-dim); }
+.product-modal__media img { width: 100%; height: 100%; object-fit: cover; }
+.product-modal__details { padding: 32px; }
+.product-modal__kicker { color: var(--leaf); font: 700 11px var(--font-mono); text-transform: uppercase; }
+.product-modal__details h2 { margin: 10px 0; font: 700 32px/1.05 var(--font-display); }
+.product-modal__tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.product-modal__tags span { padding: 5px 8px; border-radius: 999px; background: var(--leaf-tint); font-size: 11px; }
+.product-modal__description { color: var(--ink-70); font-size: 14px; }
+.product-modal__variants { display: grid; gap: 7px; margin: 17px 0; padding: 0; border: 0; }
+.product-modal__variants legend { margin-bottom: 8px; font-weight: 800; }
+.product-modal__variants label { display: flex; align-items: center; gap: 9px; padding: 9px 11px; border: 1px solid rgba(22,35,26,.12); border-radius: 9px; font-size: 13px; }
+.product-modal__variants label b { margin-left: auto; }
+.product-modal__quantity { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 18px 0; }
+.product-modal__quantity small { display: block; color: var(--ink-45); }
+.quantity-stepper { display: flex; align-items: center; gap: 10px; }
+.quantity-stepper button { width: 34px; height: 34px; }
+.product-modal__delivery { display: flex; gap: 10px; padding: 12px; border-radius: 10px; background: var(--leaf-tint); font-size: 12px; }
+.product-modal__delivery b { color: var(--leaf); }
+.product-modal__related { padding: 18px 28px; border-top: 1px solid rgba(22,35,26,.1); }
+.product-modal__related h3 { margin: 0 0 10px; font: 700 19px var(--font-display); }
+.product-modal__related > div { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+.related-product { display: flex; align-items: center; gap: 9px; padding: 8px; border: 1px solid rgba(22,35,26,.1); border-radius: 10px; }
+.related-product__image { flex: 0 0 44px; width: 44px; height: 44px; overflow: hidden; border-radius: 8px; background: var(--paper-dim); }
+.related-product__image img { width: 100%; height: 100%; object-fit: cover; }
+.related-product > div:nth-child(2) { display: grid; min-width: 0; font-size: 12px; }
+.related-product > div:nth-child(2) strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.related-product > button, .related-product__stepper { margin-left: auto; border: 0; background: transparent; color: var(--leaf); font-size: 12px; font-weight: 850; cursor: pointer; }
+.related-product__stepper { display: flex; align-items: center; gap: 8px; }
+.related-product__stepper button { border: 0; background: transparent; font-size: 18px; cursor: pointer; }
+.product-modal__footer { position: sticky; bottom: 0; display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 14px 22px; background: var(--paper); box-shadow: 0 -5px 18px rgba(22,35,26,.08); }
+.product-modal__footer > div { display: grid; font-size: 12px; }
+.product-modal__footer strong { font-size: 20px; }
+.product-modal__footer > a { padding: 13px 18px; border-radius: 999px; background: var(--leaf-deep); color: white; font-size: 13px; font-weight: 800; }
+
+@media(max-width:768px){.product-modal__overlay{align-items:end;padding:0}.product-modal{width:100%;max-height:94dvh;border-radius:18px 18px 0 0}.product-modal__main{grid-template-columns:1fr}.product-modal__media{min-height:210px;max-height:270px}.product-modal__details{padding:22px 20px}.product-modal__details h2{font-size:29px}.product-modal__related{padding:15px}.product-modal__related>div{grid-template-columns:1fr}.product-modal__footer{padding:12px 16px calc(12px + env(safe-area-inset-bottom))}}

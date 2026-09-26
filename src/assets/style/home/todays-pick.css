@@ -1,0 +1,44 @@
+.todays-pick-section { padding: 65px 0 20px; }
+.todays-pick__container { width: min(1050px,88%); margin: auto; }
+.todays-pick__badge { color: var(--leaf); font-size: 13px; font-weight: 800; }
+.todays-pick__card { position: relative; display: grid; grid-template-columns: .9fr 1.1fr; min-height: 370px; margin-top: 14px; overflow: hidden; border-radius: 25px; background: var(--leaf-tint); }
+.todays-pick__image { min-height: 330px; background: var(--paper-dim); }
+.todays-pick__image img { width: 100%; height: 100%; object-fit: cover; }
+.todays-pick__copy { align-self: center; padding: 38px; }
+.todays-pick__copy h2 { margin: 0 0 12px; font: 700 40px/1.05 var(--font-display); }
+.todays-pick__arrows { position: absolute; right: 20px; bottom: 20px; display: flex; gap: 8px; }
+.todays-pick__arrows button, .quantity-stepper button { display: grid; width: 40px; height: 40px; place-items: center; border: 1px solid rgba(22,35,26,.15); border-radius: 50%; background: var(--card); cursor: pointer; }
+.todays-pick__dots { display: flex; justify-content: center; gap: 7px; margin-top: 14px; }
+.todays-pick__dots button { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%; background: #b9c8b0; cursor: pointer; }
+.todays-pick__dots button.is-active { background: var(--leaf); }
+
+/* Chef special presentation follows the dark featured-product reference. */
+.todays-pick{padding:0;background:#102414;color:#f6f1e2}
+.todays-pick__inner{width:min(1520px,80%);padding:54px 0 58px}
+.todays-pick__header h2{color:#f5a623}
+.todays-pick__feature{grid-template-columns:minmax(320px,.8fr) 1.2fr;gap:40px}
+.todays-pick__image{height:clamp(320px,31vw,445px);min-height:0;border-radius:10px}
+.todays-pick__copy{padding:22px 0}
+.todays-pick__eyebrow{display:block;margin-bottom:18px;color:#f5a623;font:600 27px/1 var(--font-script)}
+.todays-pick__copy h3{margin:0 0 20px;color:#f6f1e2;font:750 clamp(2.7rem,4vw,4rem)/1.04 var(--font-display);letter-spacing:-.035em}
+.todays-pick__copy p{max-width:670px;margin:0 0 30px;color:rgba(246,241,226,.78);font-size:19px;line-height:1.7}
+.todays-pick__order{display:flex;align-items:center;gap:24px}
+.todays-pick__order strong{color:#f5a623;font:750 38px var(--font-display)}
+.todays-pick__order button{display:inline-flex;min-height:46px;align-items:center;gap:12px;padding:0 21px;border:0;border-radius:999px;background:#efa632;color:#102414;font-size:15px;font-weight:700;cursor:pointer}
+.todays-pick__promise{display:flex;min-height:58px;align-items:center;justify-content:center;gap:clamp(25px,5vw,68px);background:#2e6026;color:white;font-size:13px}
+.todays-pick__promise span{display:flex;align-items:center;gap:12px;font-size:22px}.todays-pick__promise b{font-size:12px}
+@media(max-width:768px){.todays-pick__inner{width:calc(100% - 32px);padding:34px 0}.todays-pick__header{margin-bottom:18px}.todays-pick__feature{grid-template-columns:1fr;gap:20px}.todays-pick__image{height:250px}.todays-pick__copy{padding:0}.todays-pick__eyebrow{margin-bottom:11px;font-size:23px}.todays-pick__copy h3{margin-bottom:12px;font-size:34px}.todays-pick__copy p{margin-bottom:18px;font-size:15px;line-height:1.55}.todays-pick__order{gap:15px}.todays-pick__order strong{font-size:31px}.todays-pick__promise{flex-wrap:wrap;gap:10px 19px;padding:13px 10px}.todays-pick__promise span{gap:6px;font-size:16px}.todays-pick__promise b{font-size:9px}}
+
+.todays-pick__arrows{position:static}.todays-pick__arrows button{border-color:rgba(246,241,226,.3);background:rgba(246,241,226,.1);color:#f6f1e2}
+
+.todays-pick{margin-top:30px}
+.todays-pick__inner{margin-inline:auto}
+.todays-pick__header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.todays-pick__header h2{display:flex;align-items:center;gap:12px;margin:0;font:800 14px/1.2 var(--font-body);letter-spacing:.02em}
+.todays-pick__header h2 span{font-size:26px}
+.todays-pick__feature{display:grid}
+.todays-pick__image img{display:block;width:100%;height:100%;object-fit:cover}
+.todays-pick__copy h3{margin:0 0 20px}
+.todays-pick__copy p{margin:0 0 28px}
+.todays-pick__promise{width:100%;padding-inline:18px}
+@media(max-width:768px){.todays-pick{margin-top:20px}.todays-pick__header{gap:15px}.todays-pick__feature{grid-template-columns:1fr}.todays-pick__image img{height:100%}.todays-pick__promise{gap:10px 18px}}
