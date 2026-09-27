@@ -1,0 +1,176 @@
+﻿.page {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 5% 5rem;
+  color: var(--ink);
+}
+.controls {
+  position: sticky;
+  top: 76px;
+  z-index: 1200;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: calc(100% + 10%);
+  margin: 0 -5% 2.2rem;
+  padding: 12px 5%;
+  border-bottom: 1px solid rgba(22,35,26,.08);
+  background: rgba(246,241,226,.97);
+  box-shadow: 0 8px 18px rgba(22,35,26,.045);
+  backdrop-filter: blur(12px);
+}
+.searchTrigger {
+  display: flex;
+  width: 100%;
+  min-height: 52px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 18px;
+  border: 1.5px solid rgba(22,35,26,.14);
+  border-radius: 999px;
+  background: var(--card);
+  box-shadow: 0 2px 10px rgba(22,35,26,.025);
+  color: var(--ink-70);
+  cursor: pointer;
+  text-align: left;
+  font-size: .9rem;
+}
+.searchTrigger span:first-child { font-size: 23px; line-height: 1; }
+.searchTrigger:hover { border-color: var(--leaf); }
+.categories {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+}
+.categories button {
+  display: inline-flex;
+  min-height: 46px;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 9px;
+  padding: 4px 16px 4px 7px;
+  border: 1.5px solid rgba(22,35,26,.18);
+  border-radius: 30px;
+  background: var(--card);
+  color: var(--ink-70);
+  cursor: pointer;
+  font-size: .86rem;
+  font-weight: 700;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+  white-space: nowrap;
+}
+.categories button:hover { border-color: var(--leaf); color: var(--leaf-deep); }
+.categories button.categoryActive { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+.categories img, .categoryIcon { width: 34px; height: 34px; flex: 0 0 34px; border-radius: 50%; object-fit: cover; }
+.categoryIcon { display: grid; place-items: center; background: var(--leaf-tint); font-size: 17px; }
+
+.hero { padding: 2.3rem 0 1.8rem; text-align: center; }
+.eyebrow { display: inline-block; color: var(--leaf); font: 700 1.35rem/1.2 var(--font-script); }
+.hero .eyebrow { margin-bottom: .25rem; transform: rotate(-1.5deg); }
+.hero h1 { max-width: 780px; margin: .25rem auto .8rem; font: 700 clamp(2.25rem,9vw,4.2rem)/1.02 var(--font-display); letter-spacing: -.01em; }
+.hero h1 em { color: var(--leaf-deep); font-weight: 500; }
+.hero p { max-width: 650px; margin: 0 auto; color: var(--ink-70); font-size: .96rem; }
+.highlights { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin-top: 1rem; }
+.highlights span { padding: .38rem .7rem; border: 1px solid rgba(22,35,26,.09); border-radius: 999px; background: var(--card); font-size: .7rem; font-weight: 800; }
+.highlights b { margin-right: 4px; color: var(--mango); }
+
+.searchView {
+  position: fixed;
+  z-index: 3000;
+  inset: 0;
+  overflow-y: auto;
+  background: var(--paper);
+  -webkit-overflow-scrolling: touch;
+}
+.searchShell { width: 100%; max-width: 1280px; min-height: 100dvh; margin: 0 auto; padding: 0 5% 5rem; }
+.searchTopbar { position: sticky; z-index: 20; top: 0; display: flex; align-items: center; gap: .75rem; padding: 1rem 0; background: rgba(246,241,226,.96); backdrop-filter: blur(12px); }
+.backButton { display: grid; width: 44px; height: 44px; flex: 0 0 44px; place-items: center; border: 1.5px solid rgba(22,35,26,.16); border-radius: 50%; background: var(--card); color: var(--ink); cursor: pointer; font-size: 21px; }
+.backButton:hover { background: var(--ink); color: var(--paper); }
+.searchInputWrap { display: flex; height: 52px; flex: 1; align-items: center; gap: 10px; border: 1.5px solid rgba(22,35,26,.18); border-radius: 999px; background: var(--card); box-shadow: 0 3px 14px rgba(22,35,26,.05); }
+.searchInputWrap > span { margin-left: 1rem; color: var(--ink-70); font-size: 20px; }
+.searchInputWrap input { width: 100%; height: 100%; min-width: 0; padding: 0 .85rem; border: 0; outline: 0; background: transparent; color: var(--ink); font: 500 .98rem var(--font-body); }
+.searchInputWrap:focus-within { border-color: var(--leaf); box-shadow: 0 0 0 3px rgba(58,117,54,.08); }
+.searchInputWrap button { width: 34px; height: 34px; flex: 0 0 34px; margin-right: 8px; border: 0; border-radius: 50%; background: rgba(22,35,26,.07); color: var(--ink); cursor: pointer; }
+.searchContent { padding-top: 2rem; }
+.searchHeading { max-width: 700px; margin: 0 auto 1.6rem; text-align: center; }
+.searchHeading .eyebrow { transform: rotate(-1.5deg); }
+.searchHeading h2 { margin: .25rem 0 .55rem; font: 700 clamp(2rem,5vw,3rem)/1.05 var(--font-display); }
+.searchHeading p { color: var(--ink-70); font-size: .9rem; }
+.suggestions { display: grid; max-width: 820px; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .55rem; margin: 0 auto 1.4rem; }
+.suggestion { display: flex; width: 100%; align-items: center; gap: .7rem; padding: .7rem .8rem; border: 1px solid rgba(22,35,26,.09); border-radius: 14px; background: var(--card); cursor: pointer; text-align: left; transition: transform .18s,border-color .18s; }
+.suggestion:hover { transform: translateY(-1px); border-color: var(--leaf); }
+.suggestion img { width: 48px; height: 48px; flex: 0 0 48px; border-radius: 10px; object-fit: cover; }
+.suggestion > span { display: flex; min-width: 0; flex-direction: column; }
+.suggestion strong { font-size: .82rem; line-height: 1.2; }
+.suggestion small { margin-top: 2px; color: var(--ink-45); font-size: .66rem; }
+.resultsHead { display: flex; align-items: center; justify-content: space-between; margin: 1rem 0 .9rem; color: var(--ink-45); font-size: .78rem; font-weight: 700; }
+.resultsHead span:first-child { color: var(--ink); font: 700 .65rem var(--font-mono); letter-spacing: .04em; text-transform: uppercase; }
+.searchResults { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1.25rem; }
+.searchResults :global(.product-card) { min-width: 0; }
+.searchEmpty, .empty { display: grid; justify-items: center; gap: .5rem; max-width: 520px; margin: 2rem auto; padding: 2.5rem 1rem; border: 1px dashed rgba(22,35,26,.16); border-radius: 20px; background: var(--card); text-align: center; }
+.searchEmpty strong, .empty strong { font: 700 1.2rem var(--font-display); }
+.searchEmpty span, .empty span { color: var(--ink-70); font-size: .85rem; }
+
+.menuSection { scroll-margin-top: 170px; margin: 1.3rem 0 4rem; }
+.menuHeading { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 1.2rem; padding-bottom: .8rem; border-bottom: 1.5px dashed rgba(22,35,26,.17); }
+.kicker { color: var(--leaf); font: 700 .62rem var(--font-mono); letter-spacing: .08em; text-transform: uppercase; }
+.menuHeading h2 { margin-top: .15rem; font: 700 1.8rem/1.05 var(--font-display); }
+.menuHeading p { max-width: 350px; color: var(--ink-70); font-size: .78rem; text-align: right; }
+.productGrid { display: grid; width: 100%; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1.5rem; }
+.productGrid :global(.product-card) { min-width: 0; }
+.loading { display: grid; min-height: 180px; place-items: center; color: var(--ink-45); font-weight: 700; }
+.bottomCta { margin-top: .5rem; padding: 2rem 1.3rem; border-radius: 24px; background: var(--ink); color: var(--paper); text-align: center; }
+.bottomCta .eyebrow { color: var(--mango); }
+.bottomCta h2 { margin: .3rem 0 .6rem; color: #fff; font: 700 2rem/1.08 var(--font-display); }
+.bottomCta p { max-width: 520px; margin: 0 auto 1rem; color: #b9c7b2; font-size: .85rem; }
+.bottomCta a { display: inline-flex; width: 100%; max-width: 320px; min-height: 48px; align-items: center; justify-content: center; gap: .55rem; border-radius: 30px; background: #25d366; color: #fff; font-size: .92rem; font-weight: 700; text-decoration: none; }
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .productGrid, .searchResults { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
+  .categories { justify-content: flex-start; overflow-x: auto; scrollbar-width: none; }
+}
+@media (max-width: 768px) {
+  .page { padding: 0 16px 3rem; }
+  .controls { top: 70px; width: calc(100% + 32px); margin: 0 -16px 1.25rem; padding: 8px 16px 9px; gap: 8px; }
+  .searchTrigger { min-height: 46px; }
+  .categories { justify-content: flex-start; gap: .5rem; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; scroll-snap-type: x proximity; }
+  .categories::-webkit-scrollbar { display: none; }
+  .categories button { min-height: 42px; padding: 4px 12px 4px 6px; font-size: .78rem; scroll-snap-align: start; }
+  .categories img, .categoryIcon { width: 30px; height: 30px; flex-basis: 30px; }
+  .hero { padding: 1.3rem 0 1.45rem; }
+  .hero .eyebrow, .searchHeading .eyebrow, .bottomCta .eyebrow { font-size: 1.1rem; }
+  .hero h1 { margin: .2rem auto .65rem; font-size: clamp(2.1rem,9vw,3.1rem); }
+  .hero p { max-width: 560px; font-size: .84rem; }
+  .highlights { gap: .4rem; margin-top: .85rem; }
+  .highlights span { padding: .35rem .55rem; font-size: .65rem; }
+  .menuSection { scroll-margin-top: 150px; margin: .4rem 0 2.7rem; }
+  .menuHeading { align-items: flex-start; flex-direction: column; gap: .4rem; margin-bottom: .9rem; }
+  .menuHeading h2 { font-size: 1.65rem; }
+  .menuHeading p { display: none; }
+  .productGrid, .searchResults { grid-template-columns: minmax(0,1fr); gap: .8rem; }
+  .bottomCta { padding: 1.7rem 1rem; border-radius: 20px; }
+  .bottomCta h2 { font-size: 1.65rem; }
+  .searchShell { padding: 0 16px 3rem; }
+  .searchTopbar { gap: .55rem; padding: .65rem 0; }
+  .backButton { width: 40px; height: 40px; flex-basis: 40px; }
+  .searchInputWrap { height: 46px; gap: 5px; }
+  .searchInputWrap input { padding: 0 .55rem; font-size: .88rem; }
+  .searchContent { padding-top: 1.2rem; }
+  .searchHeading { margin-bottom: 1.2rem; }
+  .searchHeading h2 { font-size: clamp(1.9rem,8vw,2.5rem); }
+  .searchHeading p { font-size: .82rem; }
+  .suggestions { grid-template-columns: minmax(0,1fr); margin-bottom: 1rem; }
+  .suggestion { padding: .6rem; }
+  .resultsHead { margin: .8rem 0; }
+}
+@media (max-width: 380px) {
+  .page { padding-right: 12px; padding-left: 12px; }
+  .controls { width: calc(100% + 24px); margin-right: -12px; margin-left: -12px; padding-right: 12px; padding-left: 12px; }
+  .categories { gap: .4rem; }
+  .categories button { padding-right: 9px; font-size: .72rem; }
+  .searchShell { padding-right: 12px; padding-left: 12px; }
+}
+
