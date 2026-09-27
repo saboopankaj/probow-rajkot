@@ -9,7 +9,7 @@ export function HomeHero() {
       <div className="page-container home-hero__grid">
         <div className="home-hero__copy">
           <p className="eyebrow">Healthy &middot; Fresh &middot; 100% Vegetarian</p>
-          <h1>Healthy Vegetarian Food in Rajkot</h1>
+          <h1>Healthy Vegetarian Food</h1>
           <p className="home-hero__description">Fresh, tasty rice bowls, salads, pesto pasta and smoothies &mdash; made to order in Rajkot.</p>
           <div className="home-hero__actions">
             <Link className="button button--leaf home-hero__primary" href="#menu"><span aria-hidden="true">&#127860;</span>Explore the menu <span aria-hidden="true">&#8594;</span></Link>
