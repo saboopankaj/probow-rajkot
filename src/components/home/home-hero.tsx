@@ -12,7 +12,7 @@ export function HomeHero() {
           <h1>Healthy Vegetarian Food in Rajkot</h1>
           <p className="home-hero__description">Fresh, tasty rice bowls, salads, pesto pasta and smoothies &mdash; made to order in Rajkot.</p>
           <div className="home-hero__actions">
-            <Link className="button button--leaf home-hero__primary" href="#menu"><span aria-hidden="true">&#127860;</span>Explore the menu <span aria-hidden="true">&#8594;</span></Link>
+            <Link className="button button--leaf home-hero__primary" href="menu"><span aria-hidden="true">&#127860;</span>Explore the menu <span aria-hidden="true">&#8594;</span></Link>
             <a
   className="button button--outline home-hero__secondary"
   href={orderUrl}
