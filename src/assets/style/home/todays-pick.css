@@ -17,7 +17,20 @@
 .todays-pick__inner{width:min(1520px,80%);padding:54px 0 58px}
 .todays-pick__header h2{color:#f5a623}
 .todays-pick__feature{grid-template-columns:minmax(320px,.8fr) 1.2fr;gap:40px}
-.todays-pick__image{height:clamp(320px,31vw,445px);min-height:0;border-radius:10px}
+.todays-pick__image {
+  height: clamp(320px,31vw,445px);
+  min-height: 0;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.todays-pick__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
 .todays-pick__copy{padding:22px 0}
 .todays-pick__eyebrow{display:block;margin-bottom:18px;color:#f5a623;font:600 27px/1 var(--font-script)}
 .todays-pick__copy h3{margin:0 0 20px;color:#f6f1e2;font:750 clamp(2.7rem,4vw,4rem)/1.04 var(--font-display);letter-spacing:-.035em}

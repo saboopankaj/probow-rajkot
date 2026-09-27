@@ -48,7 +48,10 @@ export function HeroCarousel() {
           </div>
         </div>
       </div>
+      {/* 
       <span className="hero-visual__badge"><span aria-hidden="true">&#10022;</span> Healthy, never boring</span>
+*/}
+      <div className="home-hero__partners"><span>Also order on</span><a className="partner-zomato" href="https://link.zomato.com/xqzv/rshare?id=13135322730563ae8" target="_blank" rel="noreferrer">Zomato</a><a className="partner-swiggy" href="https://swiggy.com" target="_blank" rel="noreferrer">Swiggy</a></div>
     </div>
   );
 }
