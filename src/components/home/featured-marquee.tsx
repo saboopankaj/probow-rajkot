@@ -1,4 +1,4 @@
-import styles from "./featured-marquee.module.css";
+import styles from "@/assets/style/home/featured-marquee.module.css";
 
 const featuredItems = [
   { name: "Crunch Salad", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=240&q=85" },
