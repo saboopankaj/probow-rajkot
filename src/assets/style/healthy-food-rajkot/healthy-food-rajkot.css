@@ -1,0 +1,810 @@
+.seo-page { width: 100%; overflow-x: clip; background: var(--paper); color: var(--ink); }
+.seo-page h1, .seo-page h2, .seo-page h3, .seo-page h4 { color: var(--ink); font-family: var(--font-display); letter-spacing: -.01em; }
+.seo-page .eyebrow { font-family: var(--font-script); }
+/* Final override: quantity controls belong ONLY inside the product popup. */
+
+
+
+/* ==========================================================
+   PROBOW — HEALTHY FOOD IN RAJKOT SEO LANDING PAGE
+   Same base theme as index; content is intentionally substantial
+   and locally relevant without keyword stuffing.
+   ========================================================== */
+.seo-page{background:var(--paper);color:var(--ink)}
+.seo-page .seo-hero{
+  max-width:1180px;margin:0 auto;padding:4.5rem 6% 3.5rem;
+  display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center;
+}
+.seo-page .seo-hero-copy .eyebrow{color:var(--leaf-deep)}
+.seo-page .seo-hero h1{font-size:clamp(2.7rem,5.5vw,5.2rem);line-height:.98;margin:.6rem 0 1rem}
+.seo-page .seo-hero h1 em{color:var(--leaf-deep)}
+.seo-page .seo-hero .lead{font-size:1.05rem;line-height:1.75;color:var(--ink-70);max-width:650px}
+.seo-page .seo-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}
+.seo-page .seo-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.45rem;
+  text-decoration:none;border-radius:999px;padding:.85rem 1.25rem;
+  font-weight:800;border:1px solid var(--ink);transition:.2s;
+}
+.seo-page .seo-btn.primary{background:var(--ink);color:var(--paper)}
+.seo-page .seo-btn.secondary{background:transparent;color:var(--ink)}
+.seo-page .seo-hero-art{
+  min-height:390px;border-radius:34px;overflow:hidden;position:relative;
+  background:var(--ink);box-shadow:0 20px 55px rgba(22,35,26,.15);
+}
+.seo-page .seo-hero-art img{width:100%;height:100%;min-height:390px;object-fit:cover;display:block}
+.seo-page .seo-hero-badge{
+  position:absolute;left:1.2rem;bottom:1.2rem;background:var(--paper);
+  padding:.8rem 1rem;border-radius:18px;font-weight:800;box-shadow:0 8px 25px #0002;
+}
+.seo-page .seo-wrap{max-width:1180px;margin:auto;padding:0 6%}
+.seo-page .seo-section{padding:4.5rem 0}
+.seo-page .seo-section.alt{background:#eef1e6}
+.seo-page .seo-head{text-align:center;max-width:760px;margin:0 auto 2.2rem}
+.seo-page .seo-head .eyebrow{color:var(--leaf-deep)}
+.seo-page .seo-head h2{font-size:clamp(2rem,4vw,3.25rem);line-height:1.05;margin:.35rem 0 .7rem}
+.seo-page .seo-head p{color:var(--ink-70);line-height:1.7}
+.seo-page .seo-intro{
+  max-width:900px;margin:auto;font-size:1rem;line-height:1.85;color:var(--ink-70)
+}
+.seo-page .seo-intro strong{color:var(--ink)}
+.seo-page .seo-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem
+}
+.seo-page .seo-card{
+  background:var(--card);border:1px solid rgba(22,35,26,.08);
+  border-radius:22px;padding:1.35rem;box-shadow:0 8px 25px rgba(22,35,26,.05)
+}
+.seo-page .seo-card .icon{
+  width:44px;height:44px;border-radius:14px;display:grid;place-items:center;
+  background:#e5efdf;color:var(--leaf-deep);font-size:1.15rem;margin-bottom:.8rem
+}
+.seo-page .seo-card h3{font-size:1.25rem;margin:.15rem 0 .55rem}
+.seo-page .seo-card p{color:var(--ink-70);line-height:1.7;font-size:.9rem}
+.seo-page .seo-card ul{margin:.7rem 0 0;padding-left:1.1rem;color:var(--ink-70);line-height:1.75;font-size:.86rem}
+.seo-page .food-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.3rem}
+.seo-page .food-card{
+  background:var(--card);border-radius:25px;overflow:hidden;
+  border:1px solid rgba(22,35,26,.08);display:grid;grid-template-columns:180px 1fr;
+  box-shadow:0 10px 28px rgba(22,35,26,.06)
+}
+.seo-page .food-card img{width:100%;height:100%;min-height:240px;object-fit:cover}
+.seo-page .food-copy{padding:1.25rem}
+.seo-page .food-copy .food-kicker{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--leaf-deep);font-weight:900}
+.seo-page .food-copy h3{margin:.3rem 0 .5rem;font-size:1.35rem}
+.seo-page .food-copy p{font-size:.84rem;line-height:1.65;color:var(--ink-70)}
+.seo-page .ingredient-list{display:flex;flex-wrap:wrap;gap:.35rem;margin:.7rem 0}
+.seo-page .ingredient-list span{
+  background:#edf2e8;border-radius:999px;padding:.28rem .55rem;
+  font-size:.65rem;font-weight:700;color:var(--leaf-deep)
+}
+.seo-page .inline-link{color:var(--leaf-deep);font-weight:900;text-decoration:underline;text-underline-offset:3px}
+.seo-page .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.seo-page .process-step{
+  background:var(--ink);color:var(--paper);border-radius:22px;padding:1.3rem
+}
+.seo-page .process-step .num{font-size:2rem;color:var(--mango);font-family:Georgia,serif;font-weight:800}
+.seo-page .process-step h3{color:#fff;font-size:1.1rem;margin:.4rem 0}
+.seo-page .process-step p{color:#c7d0c5;font-size:.8rem;line-height:1.65}
+.seo-page .promise{
+  display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;align-items:stretch
+}
+.seo-page .promise-box{border-radius:25px;padding:2rem;background:var(--ink);color:var(--paper)}
+.seo-page .promise-box h3{color:#fff;font-size:1.8rem;margin:0 0 .8rem}
+.seo-page .promise-box p{color:#c7d0c5;line-height:1.75}
+.seo-page .promise-list{display:grid;gap:.65rem}
+.seo-page .promise-list div{
+  background:var(--card);border-radius:16px;padding:.9rem 1rem;
+  display:flex;gap:.7rem;align-items:flex-start
+}
+.seo-page .promise-list i{color:var(--leaf-deep);margin-top:.2rem}
+.seo-page .audience-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.seo-page .audience-seo{
+  background:var(--card);border:1px solid rgba(22,35,26,.08);border-radius:20px;padding:1.2rem
+}
+.seo-page .audience-seo h3{font-size:1rem;margin:.4rem 0}
+.seo-page .audience-seo p{font-size:.8rem;line-height:1.65;color:var(--ink-70)}
+.seo-page .faq-seo{max-width:900px;margin:auto;display:grid;gap:.7rem}
+.seo-page .faq-seo details{
+  background:var(--card);border:1px solid rgba(22,35,26,.09);border-radius:16px;padding:1rem 1.1rem
+}
+.seo-page .faq-seo summary{cursor:pointer;font-weight:900;list-style:none}
+.seo-page .faq-seo summary::-webkit-details-marker{display:none}
+.seo-page .faq-seo p{color:var(--ink-70);line-height:1.7;font-size:.86rem;margin:.7rem 0 .1rem}
+.seo-page .local-box{
+  background:linear-gradient(135deg,#e9f1df,#f7efe0);border-radius:28px;
+  padding:2rem;display:grid;grid-template-columns:1.2fr .8fr;gap:1.5rem;align-items:center
+}
+.seo-page .local-box h2{font-size:2rem;margin:0 0 .5rem}
+.seo-page .local-box p{color:var(--ink-70);line-height:1.7}
+.seo-page .local-facts{display:grid;gap:.5rem}
+.seo-page .local-facts div{background:#ffffffa8;padding:.7rem .85rem;border-radius:12px;font-size:.82rem;font-weight:700}
+@media(max-width:600px){
+ .seo-page .seo-hero{padding:2.5rem 5% 2rem;gap:1.4rem}
+ .seo-page .seo-hero h1{font-size:2.65rem}
+ .seo-page .seo-hero .lead{font-size:.9rem}
+ .seo-page .seo-wrap{padding:0 5%}
+ .seo-page .seo-section{padding:3rem 0}
+ .seo-page .food-card{grid-template-columns:1fr}
+ .seo-page .food-card img{height:220px;min-height:220px}
+ .seo-page .process-grid, .seo-page .audience-grid{grid-template-columns:1fr}
+ .seo-page .seo-card{padding:1.1rem}
+}
+
+
+
+/* FINAL MOBILE NAV COMPATIBILITY — match working index behavior */
+
+
+
+/* =========================================================
+   PROBOW SEO PAGE — FINAL RESPONSIVE POLISH
+   Desktop/tablet landscape stays as-is.
+   Mobile is rebuilt to avoid narrow columns, overflow and
+   cramped typography at 320/360/390/430px widths.
+   ========================================================= */
+
+/* Never let SEO content create a horizontal page scroll. */
+.seo-page, .seo-page section, .seo-page .seo-wrap, .seo-page .seo-hero, .seo-page .seo-grid, .seo-page .food-grid, .seo-page .process-grid, .seo-page .promise, .seo-page .audience-grid, .seo-page .faq-seo, .seo-page .local-box{
+  min-width:0;
+}
+
+/* ---------- TABLET ---------- */
+@media (min-width:769px) and (max-width:1024px){
+  .seo-page .seo-hero{
+    padding-left:5%;
+    padding-right:5%;
+    gap:2rem;
+  }
+
+  .seo-page .seo-wrap{
+    padding-left:5%;
+    padding-right:5%;
+  }
+
+  .seo-page .seo-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+
+  .seo-page .food-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .seo-page .food-card{
+    grid-template-columns:135px minmax(0,1fr);
+  }
+
+  .seo-page .process-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .seo-page .audience-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+/* ---------- MOBILE: 600px and below ---------- */
+@media (max-width:600px){
+
+  /* Page rhythm */
+  .seo-page{
+    width:100%;
+    overflow:hidden;
+  }
+
+  .seo-page .seo-wrap{
+    width:100%;
+    max-width:none;
+    padding-left:16px;
+    padding-right:16px;
+  }
+
+  .seo-page .seo-section{
+    padding:2.65rem 0;
+  }
+
+  /* Hero: stack instead of squeezing headline beside image. */
+  .seo-page .seo-hero{
+    width:100%;
+    max-width:none;
+    padding:1.35rem 16px 1.8rem;
+    display:flex;
+    flex-direction:column;
+    gap:1.15rem;
+    align-items:stretch;
+  }
+
+  .seo-page .seo-hero-copy{
+    width:100%;
+    min-width:0;
+  }
+
+  .seo-page .seo-hero .eyebrow{
+    font-size:1rem;
+    margin-bottom:.05rem;
+  }
+
+  .seo-page .seo-hero h1{
+    font-size:clamp(2.25rem,10.5vw,3.05rem);
+    line-height:.98;
+    letter-spacing:-.025em;
+    max-width:none;
+    margin:.3rem 0 .85rem;
+    overflow-wrap:normal;
+  }
+
+  .seo-page .seo-hero .lead{
+    max-width:none;
+    font-size:.9rem;
+    line-height:1.55;
+  }
+
+  .seo-page .seo-actions{
+    display:grid;
+    grid-template-columns:1fr;
+    width:100%;
+    gap:.55rem;
+    margin-top:1.05rem;
+  }
+
+  .seo-page .seo-btn{
+    width:100%;
+    min-height:46px;
+    padding:.72rem 1rem;
+    font-size:.82rem;
+  }
+
+  .seo-page .seo-hero-art{
+    width:100%;
+    min-height:0;
+    height:270px;
+    border-radius:24px 12px 24px 12px;
+    box-shadow:0 14px 35px rgba(22,35,26,.14);
+  }
+
+  .seo-page .seo-hero-art img{
+    width:100%;
+    height:270px;
+    min-height:0;
+    object-fit:cover;
+    object-position:center;
+  }
+
+  .seo-page .seo-hero-badge{
+    left:12px;
+    bottom:12px;
+    padding:.62rem .78rem;
+    border-radius:14px;
+    font-size:.76rem;
+  }
+
+  /* Section headings */
+  .seo-page .seo-head{
+    width:100%;
+    max-width:none;
+    margin:0 auto 1.45rem;
+  }
+
+  .seo-page .seo-head .eyebrow{
+    font-size:1rem;
+  }
+
+  .seo-page .seo-head h2{
+    font-size:clamp(1.75rem,8.2vw,2.35rem);
+    line-height:1.03;
+    margin:.25rem 0 .65rem;
+    overflow-wrap:break-word;
+  }
+
+  .seo-page .seo-head p{
+    font-size:.86rem;
+    line-height:1.55;
+  }
+
+  .seo-page .seo-intro{
+    font-size:.9rem;
+    line-height:1.65;
+  }
+
+  /* Three-up feature cards -> clean single column. */
+  .seo-page .seo-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:.75rem;
+  }
+
+  .seo-page .seo-card{
+    width:100%;
+    min-width:0;
+    border-radius:18px;
+    padding:1rem;
+    box-shadow:0 6px 20px rgba(22,35,26,.045);
+  }
+
+  .seo-page .seo-card .icon{
+    width:40px;
+    height:40px;
+    border-radius:12px;
+    margin-bottom:.65rem;
+  }
+
+  .seo-page .seo-card h3{
+    font-size:1.12rem;
+    line-height:1.15;
+    margin:.1rem 0 .45rem;
+  }
+
+  .seo-page .seo-card p{
+    font-size:.82rem;
+    line-height:1.55;
+  }
+
+  .seo-page .seo-card ul{
+    font-size:.8rem;
+    line-height:1.55;
+  }
+
+  /* Food cards -> one full-width card at a time.
+     This fixes the 2-column horizontal overflow seen on phones. */
+  .seo-page .food-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:1rem;
+  }
+
+  .seo-page .food-card{
+    width:100%;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    border-radius:20px;
+  }
+
+  .seo-page .food-card img{
+    width:100%;
+    height:190px;
+    min-height:190px;
+    flex:0 0 190px;
+    object-fit:cover;
+  }
+
+  .seo-page .food-copy{
+    min-width:0;
+    padding:1rem;
+  }
+
+  .seo-page .food-copy .food-kicker{
+    font-size:.62rem;
+  }
+
+  .seo-page .food-copy h3{
+    font-size:1.22rem;
+    line-height:1.12;
+    margin:.25rem 0 .45rem;
+  }
+
+  .seo-page .food-copy p{
+    font-size:.8rem;
+    line-height:1.55;
+  }
+
+  .seo-page .ingredient-list{
+    gap:.3rem;
+    margin:.65rem 0;
+  }
+
+  .seo-page .ingredient-list span{
+    font-size:.61rem;
+    padding:.25rem .48rem;
+  }
+
+  .seo-page .inline-link{
+    font-size:.8rem;
+  }
+
+  /* Process steps */
+  .seo-page .process-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:.7rem;
+  }
+
+  .seo-page .process-step{
+    width:100%;
+    border-radius:18px;
+    padding:1rem;
+  }
+
+  .seo-page .process-step .num{
+    font-size:1.65rem;
+  }
+
+  .seo-page .process-step h3{
+    font-size:1rem;
+    margin:.25rem 0 .35rem;
+  }
+
+  .seo-page .process-step p{
+    font-size:.78rem;
+    line-height:1.55;
+  }
+
+  /* Packaging / promise */
+  .seo-page .promise{
+    width:100%;
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:.8rem;
+  }
+
+  .seo-page .promise-box{
+    width:100%;
+    border-radius:20px;
+    padding:1.25rem;
+  }
+
+  .seo-page .promise-box .eyebrow{
+    font-size:1rem;
+  }
+
+  .seo-page .promise-box h3{
+    font-size:1.5rem;
+    line-height:1.08;
+  }
+
+  .seo-page .promise-box p{
+    font-size:.82rem;
+    line-height:1.55;
+  }
+
+  .seo-page .promise-list{
+    width:100%;
+    gap:.55rem;
+  }
+
+  .seo-page .promise-list div{
+    width:100%;
+    border-radius:14px;
+    padding:.75rem .8rem;
+    font-size:.78rem;
+  }
+
+  /* Audience */
+  .seo-page .audience-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:.7rem;
+  }
+
+  .seo-page .audience-seo{
+    width:100%;
+    border-radius:16px;
+    padding:1rem;
+  }
+
+  .seo-page .audience-seo h3{
+    font-size:.98rem;
+  }
+
+  .seo-page .audience-seo p{
+    font-size:.78rem;
+    line-height:1.55;
+  }
+
+  /* Rajkot/local block */
+  .seo-page .local-box{
+    width:100%;
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:1rem;
+    border-radius:20px;
+    padding:1.2rem;
+  }
+
+  .seo-page .local-box h2{
+    font-size:1.65rem;
+    line-height:1.08;
+  }
+
+  .seo-page .local-box p{
+    font-size:.82rem;
+    line-height:1.55;
+  }
+
+  .seo-page .local-facts{
+    width:100%;
+    gap:.45rem;
+  }
+
+  .seo-page .local-facts div{
+    width:100%;
+    padding:.65rem .72rem;
+    border-radius:11px;
+    font-size:.75rem;
+  }
+
+  /* FAQ */
+  .seo-page .faq-seo{
+    width:100%;
+    display:grid;
+    gap:.55rem;
+  }
+
+  .seo-page .faq-seo details{
+    width:100%;
+    border-radius:14px;
+    padding:.82rem .85rem;
+  }
+
+  .seo-page .faq-seo summary{
+    font-size:.82rem;
+    line-height:1.4;
+    padding-right:.2rem;
+  }
+
+  .seo-page .faq-seo p{
+    font-size:.78rem;
+    line-height:1.55;
+    margin:.6rem 0 .05rem;
+  }
+
+  /* Final CTA */
+  .seo-page .seo-section[style*="padding-bottom"]{
+    padding-bottom:3.5rem !important;
+  }
+
+  /* Header: keep logo + WhatsApp + hamburger comfortable on narrow phones. */
+
+  /* Drawer should always fit even on 320px phones. */
+
+  /* Avoid fixed CTA covering the last content on short screens. */
+}
+
+/* ---------- EXTRA-SMALL PHONES: 320–380px ---------- */
+@media (max-width:380px){
+
+  .seo-page .seo-hero{
+    padding-left:12px;
+    padding-right:12px;
+    padding-top:1.15rem;
+  }
+
+  .seo-page .seo-wrap{
+    padding-left:12px;
+    padding-right:12px;
+  }
+
+  .seo-page .seo-section{
+    padding-top:2.25rem;
+    padding-bottom:2.25rem;
+  }
+
+  .seo-page .seo-hero h1{
+    font-size:2.15rem;
+  }
+
+  .seo-page .seo-hero-art, .seo-page .seo-hero-art img{
+    height:235px;
+  }
+
+  .seo-page .seo-head h2{
+    font-size:1.72rem;
+  }
+
+  .seo-page .food-card img{
+    height:165px;
+    min-height:165px;
+    flex-basis:165px;
+  }
+
+  .seo-page .seo-btn{
+    min-height:44px;
+    font-size:.78rem;
+  }
+}
+
+/* ---------- LANDSCAPE PHONES ---------- */
+@media (max-width:600px) and (orientation:landscape){
+  .seo-page .seo-hero{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(180px,.7fr);
+    align-items:center;
+  }
+
+  .seo-page .seo-hero-art, .seo-page .seo-hero-art img{
+    height:230px;
+  }
+
+  .seo-page .seo-hero h1{
+    font-size:2.2rem;
+  }
+}
+
+
+
+/* ==========================================================
+   PROBOW — RAJKOT STORY
+   ========================================================== */
+
+.seo-page .probow-rajkot-story {
+  padding: 5.5rem 6%;
+  background: var(--paper);
+}
+
+.seo-page .probow-rajkot-story-inner {
+  max-width: 1180px;
+  margin: auto;
+}
+
+.seo-page .probow-rajkot-story-top {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 3rem;
+  align-items: end;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid rgba(22,35,26,.1);
+}
+
+.seo-page .probow-rajkot-story-top .eyebrow {
+  color: var(--leaf-deep);
+}
+
+.seo-page .probow-rajkot-story-top h2 {
+  font-size: clamp(2.3rem, 4.5vw, 4.3rem);
+  line-height: .98;
+  margin: .45rem 0 0;
+  max-width: 760px;
+}
+
+.seo-page .probow-rajkot-story-top h2 em {
+  color: var(--leaf-deep);
+}
+
+.seo-page .probow-rajkot-story-top > p {
+  color: var(--ink-70);
+  line-height: 1.8;
+  font-size: .96rem;
+  margin: 0;
+}
+
+.seo-page .probow-rajkot-story-main {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.seo-page .probow-rajkot-story-copy {
+  padding-right: 1rem;
+}
+
+.seo-page .probow-rajkot-story-copy h3 {
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  line-height: 1.05;
+  margin: .7rem 0 1rem;
+}
+
+.seo-page .probow-rajkot-story-copy p {
+  color: var(--ink-70);
+  line-height: 1.8;
+  font-size: .9rem;
+  margin-bottom: .9rem;
+}
+
+.seo-page .probow-rajkot-story-points {
+  display: grid;
+  gap: .8rem;
+}
+
+.seo-page .probow-rajkot-story-quote {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 1.1rem;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 26px;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.seo-page .probow-rajkot-story-quote .quote-mark {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--mango);
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+  font-family: Georgia, serif;
+  font-size: 2.7rem;
+  line-height: 1;
+}
+
+.seo-page .probow-rajkot-story-quote p {
+  margin: 0 0 .5rem;
+  color: #fff;
+  font-family: Georgia, serif;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.35;
+}
+
+.seo-page .probow-rajkot-story-quote span {
+  color: #bdc8bb;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.seo-page .probow-rajkot-story-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  margin-top: 1.3rem;
+}
+
+.seo-page .probow-rajkot-story-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .8rem 1.05rem;
+  border-radius: 999px;
+  background: #eef1e6;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: .76rem;
+  font-weight: 900;
+}
+
+.seo-page .probow-rajkot-story-links a:first-child {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+@media (max-width: 760px) {
+
+  .seo-page .probow-rajkot-story {
+    padding: 3.5rem 5%;
+  }
+
+  .seo-page .probow-rajkot-story-top {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .seo-page .probow-rajkot-story-top h2 {
+    font-size: 2.4rem;
+  }
+
+  .seo-page .probow-rajkot-story-main {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2.2rem 0;
+  }
+
+  .seo-page .probow-rajkot-story-copy {
+    padding-right: 0;
+  }
+
+  .seo-page .probow-rajkot-story-quote {
+    grid-template-columns: 1fr;
+    padding: 1.4rem;
+  }
+
+  .seo-page .probow-rajkot-story-quote .quote-mark {
+    width: 48px;
+    height: 48px;
+    font-size: 2.1rem;
+  }
+
+  .seo-page .probow-rajkot-story-links {
+    flex-direction: column;
+  }
+
+  .seo-page .probow-rajkot-story-links a {
+    justify-content: center;
+  }
+}
