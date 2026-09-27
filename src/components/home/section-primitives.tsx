@@ -1,10 +1,12 @@
+import type { ReactNode } from "react";
+
 export function ContentImage({ src, alt, className = "" }: { src: string; alt: string; className?: string }) {
   // Source uses remote CDN images supplied by PROBOW and Unsplash.
   // eslint-disable-next-line @next/next/no-img-element
   return <img className={className} src={src} alt={alt} loading="lazy" />;
 }
 
-export function SectionHeading({ eyebrow, title, description }: { eyebrow?: string; title: string; description?: string }) {
+export function SectionHeading({ eyebrow, title, description }: { eyebrow?: string; title: string; description?: ReactNode }) {
   return <div className="section-heading"><span className="eyebrow">{eyebrow}</span><h2>{title}</h2>{description && <p>{description}</p>}</div>;
 }
 

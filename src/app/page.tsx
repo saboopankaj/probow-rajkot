@@ -3,6 +3,8 @@ import { HomeHero } from "@/components/home/home-hero";
 import { HomeSections } from "@/components/home/home-sections";
 import { HomeMenu } from "@/components/home/home-menu";
 import { OfferPopup } from "@/components/home/offer-popup";
+import { FeaturedMarquee } from "@/components/home/featured-marquee";
+import { FoodCategories, IngredientsSection } from "@/components/home/sections/food-sections";
 
 export const metadata: Metadata = {
   title: "PROBOW | Healthy Vegetarian Food & Delivery in Rajkot",
@@ -24,7 +26,7 @@ export default function HomePage() {
   return (
     <>
       <HomeHero />
-      <HomeMenu />
+      <HomeMenu beforeMenu={<><FeaturedMarquee /><FoodCategories /><IngredientsSection /></>} />
       <HomeSections />
       <OfferPopup />
     </>

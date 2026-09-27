@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import type { ReactNode } from "react";
 import Image from "next/image";
 import { getMenuData, getProBowImageUrl, type MenuCategory, type MenuPayload, type MenuProduct } from "@/lib/probow-api";
 import { ProductCard } from "@/components/home/product-card";
@@ -13,7 +14,7 @@ function categoryName(category: MenuCategory | undefined, id: string) {
   return category?.name || id.split("-").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
 }
 
-export function HomeMenu() {
+export function HomeMenu({ beforeMenu }: { beforeMenu?: ReactNode }) {
   const [menu, setMenu] = useState<MenuPayload | null>(null);
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [query, setQuery] = useState("");
@@ -56,6 +57,7 @@ export function HomeMenu() {
   return (
     <>
       <TodaysPick products={featuredProducts} onOpen={setSelectedProduct} />
+      {beforeMenu}
       <section className="home-menu" id="menu" aria-labelledby="menu-heading">
         <div className="page-container">
           <div className="section-heading section-heading--center">

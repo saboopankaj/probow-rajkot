@@ -122,3 +122,59 @@
  .delivery-zones__inner,.office-meals__inner{gap:20px}
  .delivery-zones__actions{gap:9px}
 }
+
+
+/* Homepage sections matched to the Staging reference. */
+.food-categories { padding-top: clamp(44px, 5vw, 72px); }
+.ingredients-section { padding: clamp(32px, 4vw, 54px) 20px; background: var(--paper); }
+.ingredients-section__grid { max-width: 1450px; padding: clamp(24px, 4vw, 52px); border-radius: 32px; background: #e4ebdd; grid-template-columns: 1.15fr 1fr; }
+.ingredients-section__grid .section-heading { margin-bottom: 20px; }
+.ingredients-section__image { min-height: 390px; }
+.ingredients-section__tags { display: flex; flex-wrap: wrap; gap: 9px; margin: 0 0 25px; padding: 0; list-style: none; }
+.ingredients-section__tags li { padding: 10px 14px; border-radius: 999px; background: var(--card); color: var(--ink); font-size: 13px; font-weight: 800; }
+.ingredients-section__tags li::before { content: "\2713 "; }
+.ingredients-section__cta { display: inline-flex; min-height: 54px; align-items: center; gap: 10px; padding: 0 23px; border: 1px solid var(--leaf); border-radius: 999px; color: var(--leaf); font-weight: 800; }
+.ingredients-section__cta:hover { background: var(--leaf); color: white; }
+.why-probow .section-heading { max-width: 980px; margin: 0 auto 44px; text-align: center; }
+.why-probow .feature-card { min-height: 264px; padding: 32px; border-radius: 25px; background: var(--card); }
+.why-probow .feature-card__icon { display: grid; width: 56px; height: 56px; place-items: center; margin-bottom: 25px; border-radius: 17px; background: var(--leaf-tint); font-size: 22px; }
+.reviews-section { padding-block: clamp(48px, 6vw, 84px); }
+.reviews-panel { padding: clamp(28px, 5vw, 68px); border: 1px solid rgba(22,35,26,.1); border-radius: 34px; background: #f0e9d5; }
+.reviews-panel > .section-heading { max-width: 900px; margin: 0 auto 46px; text-align: center; }
+.reviews-panel > .section-heading h2 { font-size: clamp(2.4rem, 4vw, 3.5rem); }
+.reviews-panel > .section-heading p { font-size: 18px; }
+.reviews-panel > .section-heading p strong { color: var(--ink); font-weight: 800; }
+.reviews-grid { grid-template-columns: repeat(4,minmax(0,1fr)); align-items: stretch; gap: 18px; }
+.reviews-rating-card, .reviews-grid blockquote { min-width: 0; min-height: 330px; padding: 24px; border-radius: 24px; }
+.reviews-rating-card { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; background: #15281b; color: #fffdf7; box-shadow: 0 18px 35px rgba(22,35,26,.13); }
+.reviews-rating-card > strong { font: 700 70px/.95 var(--font-display); }
+.reviews-rating-card > span { margin: 13px 0; color: #f3a231; font-size: 21px; letter-spacing: 2px; }
+.reviews-rating-card > b { margin-bottom: 8px; font-size: 14px; }
+.reviews-rating-card > small { color: rgba(255,255,255,.75); }
+.reviews-rating-card > a { display: inline-flex; align-items: center; gap: 8px; margin-top: 24px; padding: 14px 16px; border-radius: 999px; background: #d51f32; color: white; font-size: 13px; font-weight: 800; }
+.reviews-grid blockquote { display: flex; flex-direction: column; border: 1px solid rgba(22,35,26,.08); background: var(--card); box-shadow: 0 12px 28px rgba(22,35,26,.06); }
+.reviews-grid blockquote header { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.reviews-grid blockquote header span { color: #f0a132; letter-spacing: 1px; white-space: nowrap; }
+.reviews-grid blockquote header b { padding: 8px 10px; border-radius: 999px; background: var(--leaf-tint); color: var(--leaf-deep); font: 700 9px var(--font-mono); white-space: nowrap; }
+.reviews-grid blockquote p { flex: 1; margin: 22px 0; color: var(--ink-70); font: 400 19px/1.52 var(--font-display); }
+.reviews-grid blockquote cite { color: var(--ink); font-style: normal; font-weight: 800; }
+.delivery-section { padding-block: 34px; background: var(--paper); }
+.delivery-section__inner { display: grid; grid-template-columns: 90px minmax(0,1fr); align-items: center; gap: 30px; padding: clamp(28px, 4vw, 52px); border: 1px solid rgba(22,35,26,.09); border-radius: 34px; background: #e4ebdd; }
+.delivery-section__icon { display: grid; width: 90px; height: 90px; place-items: center; border-radius: 24px; background: #315a2b; color: white; font-size: 38px; }
+.delivery-section__copy { max-width: 1000px; }
+.delivery-section__copy .eyebrow { margin-bottom: 8px; }
+.delivery-section__copy h2 { margin: 0 0 12px; font: 700 clamp(2rem, 3.6vw, 2.8rem)/1.08 var(--font-display); }
+.delivery-section__copy > p { margin: 0; color: var(--ink-70); line-height: 1.7; }
+.delivery-section__perks { display: flex; flex-wrap: wrap; gap: 9px; margin: 19px 0 0; padding: 0; list-style: none; }
+.delivery-section__perks li { display: inline-flex; align-items: center; gap: 8px; padding: 11px 14px; border-radius: 999px; background: var(--card); color: var(--leaf-deep); font-size: 13px; font-weight: 800; }
+.delivery-section__perks li span { font-size: 16px; }
+.delivery-section__actions { align-items: center; margin-top: 18px; }
+.delivery-section__actions .delivery-terms-trigger { padding: 0; border: 0; background: transparent; color: var(--leaf-deep); font-weight: 800; cursor: pointer; }
+.delivery-section__order { display: inline-flex; align-items: center; gap: 8px; color: var(--leaf-deep); font-weight: 800; }
+@media(max-width:1024px){.reviews-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.reviews-rating-card,.reviews-grid blockquote{min-height:270px}}
+@media(max-width:768px){
+ .ingredients-section{padding-inline:12px}.ingredients-section__grid{padding:22px;border-radius:24px;grid-template-columns:1fr;gap:20px}.ingredients-section__image{min-height:240px}.ingredients-section__tags{gap:8px;margin-bottom:20px}.ingredients-section__tags li{padding:9px 11px;font-size:11px}.ingredients-section__cta{min-height:48px}
+ .why-probow .section-heading{margin-bottom:24px}.why-probow .feature-card{min-height:0;padding:20px}
+ .reviews-panel{padding:22px 16px;border-radius:25px}.reviews-panel>.section-heading{margin-bottom:22px}.reviews-panel>.section-heading p{font-size:14px}.reviews-grid{display:flex;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding:1px 1px 10px}.reviews-grid::-webkit-scrollbar{display:none}.reviews-rating-card,.reviews-grid blockquote{flex:0 0 84%;min-width:0;min-height:290px;padding:20px;scroll-snap-align:start}.reviews-rating-card>strong{font-size:60px}.reviews-grid blockquote p{font-size:17px}
+ .delivery-section{padding-block:8px}.delivery-section__inner{grid-template-columns:1fr;gap:18px;padding:22px 19px;border-radius:24px}.delivery-section__icon{width:62px;height:62px;border-radius:18px;font-size:29px}.delivery-section__copy .eyebrow{font-size:16px}.delivery-section__copy h2{font-size:clamp(1.7rem,7vw,2.15rem)}.delivery-section__copy>p{font-size:13px;line-height:1.6}.delivery-section__perks{gap:8px;margin-top:14px}.delivery-section__perks li{padding:9px 11px;font-size:11px}.delivery-section__actions{align-items:flex-start;flex-direction:column;gap:13px;margin-top:16px}
+}

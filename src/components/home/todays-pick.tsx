@@ -32,7 +32,6 @@ export function TodaysPick({ products, onOpen }: { products: MenuProduct[]; onOp
           </div>
         </div>
       </div>
-      <div className="todays-pick__promise"><span>&#10003; <b>PURE VEG</b></span><span>&#10003; <b>NO PRESERVATIVES</b></span><span>&#10003; <b>ECO PACKAGING</b></span><span>&#10003; <b>MADE FRESH DAILY</b></span></div>
     </section>
   );
 }

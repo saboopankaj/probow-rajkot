@@ -26,7 +26,7 @@ export function DeliveryTerms() {
   }, [open]);
 
   return <>
-    <button className="delivery-terms-trigger" type="button" onClick={() => setOpen(true)}>Delivery Terms &amp; Conditions <span aria-hidden="true">&#8599;</span></button>
+    <button className="delivery-terms-trigger" type="button" onClick={() => setOpen(true)}>View Delivery T&amp;C <span aria-hidden="true">&#8594;</span></button>
     {open && <div className="terms-overlay" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setOpen(false); }}>
       <section className="terms-dialog" role="dialog" aria-modal="true" aria-labelledby="delivery-terms-title">
         <button className="terms-dialog__close" type="button" aria-label="Close delivery terms" onClick={() => setOpen(false)}>&#10005;</button>
